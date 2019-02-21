@@ -3,6 +3,7 @@ BODY
 */
 .block {
 	flex-direction: column;
+	height: 100%;
 }
 
 
@@ -16,6 +17,7 @@ HEADER
 	display: flex;
 	justify-content: space-around;
 	position: fixed;
+	z-index: 8;
 	top: 0;
 	background-color: #0c2461;
 }
@@ -46,18 +48,18 @@ HEADER END
 /*
 BANNER
 */
-.banner {
+#banner {
 	background-color: #0c2461;
 }
 
-.banner .banner-image {
+#banner .banner-image {
     top: 0;
     left: 0;
     margin-top: 76px;
    	min-width: 100%;
 }
 
-.banner .banner-title {
+#banner .banner-title {
 	top: 25%;
 	text-align: left;
 	position: absolute;
@@ -69,7 +71,7 @@ BANNER
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
-.banner .banner-title-2 {
+#banner .banner-title-2 {
 	text-align: center;
 	position: absolute;
 	color : white;
@@ -144,10 +146,11 @@ PROGRAM END
 */
 
 /*
-ORDER
+ORDER FORM
 */
 .order {
 	background-color: white;
+	display: flex;
 }
 
 .order-title {
@@ -167,21 +170,158 @@ ORDER
 	padding-bottom: 5%;
 	font-family: 'Arbutus Slab', serif;
 	color: black;
-
 }
 
-.order-form {
+.order-star {
+	font-family: 'georgia';
+	text-align: center;
+}
+
+.form {
+	font-family: 'Arbutus Slab', serif;
+	color: black;
+	padding-top: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	min-width: 50%;
+    display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+	background-color: white;
+}
+
+.form-coche-1 {
+	text-align: center;
+}
+
+.form-coche {
+	text-align: center;
+	color: grey;
+	margin-bottom: 10px;
+}
+
+.form-coche-2 {
+	text-align: center;
+}
+
+.form-coche-3 {
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.date {
+	font-size: 16pt;
+	color: black;
+}
+
+/*
+ORDER FORM END
+*/
+
+/*
+ACTU
+*/
+.actu-title {
+	background-image:linear-gradient( #0c2461, #0c2461, #0c2461, #0c2461, white);
+	font-family: 'Arbutus Slab', serif;
+	color: white;
+	min-height: 50px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.actu {
+	font-family: 'Arbutus Slab', serif;
+	color: black;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.actu-text {
+	font-size: 15pt;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.button-actu {
+	text-align: center;
+}
+/*
+ACTU END
+*/
+
+/*
+CONTACT
+*/
+
+.contact-title {
+	background-image:linear-gradient( #0c2461, #0c2461, #0c2461, #0c2461, white);
+	font-family: 'Arbutus Slab', serif;
+	color: white;
+	min-height: 50px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contact-text {
+	padding-bottom: 10px;
+}
+
+.contact-text-gps {
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
 	font-family: 'Arbutus Slab', serif;
 	color: black;
 }
 
-.form-coche {
+.contact-text-form {
+	background-color: white;
 	display: flex;
 }
+
+.contact-star {
+	font-family: 'georgia';
+	text-align: center;
+}
+
+.form-control {
+	width: 600px;
+	height: 100px;
+}
 /*
-ORDER END
+CONTACT END
 */
 
+/*
+FOOTER
+*/
+
+.banner-bottom {
+	width: 100%;
+	height: 150px;
+	background-color: #0c2461;
+}
+
+.banner-bottom-title {
+	color : white;
+	text-align: center;
+	font-size: 13pt;
+}
+
+.adress {
+	font-size: 10pt;
+	color : white;
+	text-align: center;
+}
+/*
+FOOTER END
+*/
 
 /*
 BODY END
