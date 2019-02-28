@@ -7,8 +7,8 @@
 		<title>Les Films de Plein Air</title>
 
 		<!-- CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="src/main.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 		<!-- CSS END -->
 
 		<!-- FONT -->
@@ -21,18 +21,20 @@
 	<!-- BODY -->
 	<body>
 		<!-- HEADER -->
-		<div id="big-block">
 		<div class="block">
-			<header class="header">
-				<a  href="#" class="header-title">
+			<header class="container-fluid header">
+				<a  href="#" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 header-title">
 				Films de  Plein  Air</a>
-				<nav class="header-menu">
+				<nav class="col-xs-0 col-sm-0 col-md-6 col-lg-6 header-menu">
 					<a href="#banner">Accueil</a>
 					<a href="#program-anchor">Programme</a>
 					<a href="#order-anchor">Réservation</a>
 					<a href="#actu-anchor">Actu</a>
 					<a href="#contact-anchor">Contact</a>
 				</nav>
+				</div>
+				
+				btn btn-danger dropdown-toggle
 			</header>
 		</div>
 		<!-- HEADER END -->
@@ -40,23 +42,24 @@
 		<div class="block">
 			<div id="banner">
 				<img src="src/img/banner.jpg" alt="Photo illustration caméra sur une route" class="banner-image">
-				<h1 class="banner-title">REDÉCOUVREZ LE CINÉMA DE PLEIN AIR ! <br>Projections gratuites de films d'auteurs au Parc Monceau du 5 au 8 août. </h1>
-				<h2 class="banner-title-2">Quand ?<br><br><br>
-Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons clôturer chaque soir à minuit.<br><br><br>2 projections par soir, avec une pause entre chaque film afin de vous permettre d'échanger sur les films d'auteur qui vous seront présentés.<br><br><br>Comment ?<br><br><br>Ce festival de projection de films d'auteurs est totalement GRATUIT ! Venez équipé ou les mains vides pour profiter d'une séance de cinéma qui associera 7ème Art et Nature !<br><br><br>Food trucks et stands de gourmandises seront présents pour les petits plaisirs.<br><br><br>En cas de mauvais temps, des protections seront prévues afin de garantir le visionnage des films dans de bonnes conditions.</h2>		
+				<h1 class="col-xs-0 col-sm-0 col-md-6 col-lg-6 banner-title">REDÉCOUVREZ LE CINÉMA <br>DE PLEIN AIR !</h1><br><p class="col-xs-0 col-sm-0 col-md-6 col-lg-6 banner-title-p">Projections gratuites de films d'auteurs au Parc Monceau du 5 au 8 août. </p>
+				<p class="col-xs-0 col-sm-0 col-md-12 col-lg-12 banner-title-2">Quand ?<br>
+Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer chaque soir à minuit.<br>2 projections par soir, avec une pause entre chaque film afin de vous permettre d'échanger sur les films d'auteur qui vous seront présentés.<br>Comment ?<br>Ce festival de projection de films d'auteurs est totalement GRATUIT ! Venez équipé ou les mains vides pour profiter d'une séance de cinéma qui associera 7ème Art et Nature !<br>Food trucks et stands de gourmandises seront présents pour les petits plaisirs.<br>En cas de mauvais temps, des protections seront prévues afin de garantir le visionnage des films dans de bonnes conditions.</p>		
 			</div>
-		</div>
 		</div>
 		<!-- BANNER END -->
 		<!-- SECTION PROGRAMME -->
 		<section class="block">
-			<div class="program-title">
-				<h2 id="program-anchor"><b>Programme</b></h2>
-				<a href="src/img/programmation.png">
-					<button class="button is-small"><b>Télécharger le programme</b></button>
+			<div class="container-fluid program-title">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<h2 id="program-anchor"><b>Programme</b></h2>
+				</div>
+				<a  href="src/img/programmation.png" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 button-prog">
+					<button class="btn btn-outline-warning"><b>Télécharger le programme</b></button>
 				</a>
 			</div>
-			<div class="program-list">
-				<div class="program-list-friday">
+			<div class="container-fluid program-list">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 program-list-friday">
 					<p class="date"><b>Vendredi 5 août</b></p>
 					<div class="program-list-18h">
 						<p><b>18h30 Le concert </b></p><br><br>
@@ -66,7 +69,7 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 						<p>A l'époque de Brejnev, Andrei Filipov était le plus grand chef d'orchestre...
 						</p>
 					</div>
-					<div class="program-list-20h">
+					<div class="program-list-20h-friday">
 						<p><b>20h De rouille et d'os </b></p><br><br>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=172976.html" title="Ceci est un lien image HTML">
 							<img src="src/img/de-rouille-et-dos.jpg"><br><br>
@@ -75,16 +78,16 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 						</p>
 					</div>
 				</div>
-				<div class="program-list-saturday">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 program-list-saturday">
 					<p class="date"><b>Samedi 6 août</b><br></p>
-					<div class="program-list-18h">
+					<div class="container program-list-18h">
 						<p><b>18h30 Entre les murs </b></p><br><br>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=58151.html" title="Ceci est un lien image HTML">
 							<img src="src/img/entre-les-murs.jpg"><br><br>
 						</a>
 						<p>François est un jeune professeur de francais d'une classe de 4e dans un collège ordinaire...</p>
 					</div>
-					<div class="program-list-20h">
+					<div class="container program-list-20h">
 						<p><b>20h Je vais bien ne t'en fais pas </b></p><br><br>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=108818.html" title="Ceci est un lien image HTML">
 							<img src="src/img/je-vais-bien-ne-ten-fais-pas.jpg"><br><br>
@@ -93,9 +96,9 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 						</p>
 					</div>
 				</div>
-				<div class="program-list-sunday">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 program-list-sunday">
 					<p class="date"><b>Dimanche 7 août</b></p>
-					<div class="program-list-18h">
+					<div class="container program-list-18h">
 						<p><b>18h30 La haine </b></p><br><br>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=12551.html" title="Ceci est un lien image HTML">
 							<img src="src/img/la-haine.jpg"><br><br>
@@ -103,7 +106,7 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 						<p>Après une bavure policière, une nuit d'émeutes éclate entre les jeunes de la cité des muguets...
 						</p>
 					</div>
-					<div class="program-list-20h">
+					<div class="container program-list-20h">
 						<p><b>20h Persepolis </b><br><br></p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=110204.html">
 							<img src="src/img/persepolis.jpg"><br><br>
@@ -112,9 +115,9 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 						</p>
 					</div>
 				</div>
-				<div class="program-list-monday">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 program-list-monday">
 					<p class="date"><b>Lundi 8 août</b></p>
-					<div class="program-list-18h">
+					<div class="container program-list-18h">
 						<p><b>18h30 Polisse</b></p><br><br>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=181893.html">
 							<img src="src/img/polisse.jpg"><br><br>
@@ -122,7 +125,7 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 						<p>A Paris, Melissa, une photographe, vient effectuer un reportage...
 						</p>
 					</div>
-					<div class="program-list-20h">
+					<div class="container program-list-20h-monday">
 						<p><b>20h Un prophète </b></p><br><br>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=110268.html">
 							<img src="src/img/prophete.jpg"><br><br>
@@ -136,14 +139,14 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 		<!-- SECTION PROGRAMME END -->
 		<!-- SECTION RESERVATION -->
 		<section class="block">
-			<div class="order-title">
+			<div class="container-fluid order-title">
 				<h2 id="order-anchor"><b>Réserver</b></h2>
 			</div>
-			<div class="order">
-				<div class="order-text">
+			<div class="container-fluid order">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 order-text">
 					<p><b>Réservez vos places !</b><br><br>Afin d'optimiser l'organisation et votre confort lors des projections (fauteuils, chaises, coussins, mais également food trucks, stands de gourmandises type pop-corn, pommes d'amour, bonbons...), nous vous recommandons de réserver dès aujourd'hui vos places.<br>Vous pouvez bien entendu venir avec votre propre matériel.</p>
 				</div>
-				<div class="form">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 form">
 					<form action="">
 						<p class="order-star"><i>Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p><br>
 						<fieldset class="order-form">
@@ -160,7 +163,7 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 							</div>
 							<div class="form-coche">
 								<div class="form-marge">
-									<INPUT type="checkbox" name="choice1" value="1" class="choice"> 18h Le concert</INPUT>
+									<INPUT type="checkbox" name="choice1" value="1"> 18h Le concert</INPUT>
 								</div>
 								<INPUT type="checkbox" name="choice2" value="2"> 20h De rouille et d'os</INPUT>
 							</div>
@@ -206,7 +209,7 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 								<option value="9">9</option>
 								<option value="10">10</option>
 							</select><br><br>
-								<button class="button is-primary"><p><b>Réserver mes places</b></p></button>
+								<button class="btn btn-success"><p><b>Réserver mes places</b></p></button>
 						</div>
 					</form>
 				</div>
@@ -219,27 +222,27 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 			<div class="actu-title">
 				<h2 id="actu-anchor"><b>Actualités</b></h2>
 			</div>
-			<div class="actu">
-				<div class="actu-1">
+			<div class="container-fluid actu">
+				<article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 actu-1">
 					<p class="actu-text">Projection pluvieuses, on a tout prévu !</p>
-					<img src="src/img/umbrella.jpg"></img>
+					<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12 actu-img" src="src/img/umbrella.jpg"></img>
 					<p>Pas de panique, quelque soit la météo, les projections seront assurées</p>
-				</div>
-				<div class="actu-2">
+				</article>
+				<article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 actu-2">
 					<p class="actu-text">La mairie donné son feu vert #Happy</p>
-					<img src="src/img/thumb.jpg"></img>
+					<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12 actu-img" src="src/img/thumb.jpg"></img>
 					<p>Après de longues semaines d'attentes, la mairie nous a validé les dates pour les projetions...</p>
-				</div>
-				<div class="actu-3">
+				</article>
+				<article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 actu-3">
 					<p class="actu-text">Découvrez un lieu magique !</p>
-					<img src="src/img/monceau.jpg"></img>
+					<img class="col-xs-12 col-sm-12 col-md-12 col-lg-12 actu-img" src="src/img/monceau.jpg"></img>
 					<p>Les films de plein air méritent un cadre exceptionnel. Au coeur de Paris</p>
-				</div>
+				</article>
 			</div>
 			<div class="button-actu">
-				<button class="button is-primary"><p><b>Toutes les actualités</b></p></button>
-			</div>	
-		</section>
+				<button class="btn btn-warning"><p><b>Toutes les actualités</b></p></button>
+			</div>
+		</section>	
 
 
 
@@ -250,44 +253,52 @@ Du 5 au 8 août<br><br><br>Nous vous accueillons dès 18h sur place, et devons c
 			<div class="contact-title">
 				<h2 id="contact-anchor"><b>Contact</b></h2>
 			</div>
-			<div class="contact-text-form">
-				<div class="contact-text-gps">
-					<div class="contact-text">
-						<p><b>Contacter l'association</b><br><br>Fondée en 2016 dans le but de relancer l'attrait pour les films d'auteur tout en profitant de l'environnement verdoyant du Parc Monceau, l'Association Festival des Films de Plein Air est une association loi 1901.<br>N'hésitez pas à rejoindre nos rangs afin de développer plus de projections en région parisienne !</p>
+			<div class="container-fluid contact">
+					<div class="contact-text-gps">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-text">
+							<p><b>Contacter l'association</b><br><br>Fondée en 2016 dans le but de relancer l'attrait pour les films d'auteur tout en profitant de l'environnement verdoyant du Parc Monceau, l'Association Festival des Films de Plein Air est une association loi 1901.<br>N'hésitez pas à rejoindre nos rangs afin de développer plus de projections en région parisienne !</p>
+						</div>			
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-gps">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8737382034974!2d2.3067663155558016!3d48.8796834792896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1551288445390" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
 					</div>
-					<div class="contact-gps">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8737382034915!2d2.3067663154128546!3d48.8796834792897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1550740912769" width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 form">
+							<form action="">
+								<p class="contact-star"><i>Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p><br>
+								<fieldset class="contact-form">
+									<div>
+										<label>Nom <em>*</em></label>
+										<input id="name" placeholder="Votre nom" required>
+									</div>
+									<div>
+										<label>Adresse email <em>*</em></label>
+										<input id="email" placeholder="exemple@hotmail.fr">
+									</div>
+									<div>
+										<label> Votre message <em>*</em></label><br>
+            							<textarea class="form-control" rows="3" placeholder="Votre message"></textarea><br>
+            							<div class="send">
+            								<button class="btn btn-success"><p><b>Envoyer</b></p></button>
+            							</div>
+            						</div>
+          							</div>
+								</fieldset>
+							</form>	
 					</div>
-				</div>
-				<div class="form">
-					<form action="">
-						<p class="contact-star"><i>Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p><br>
-						<fieldset class="contact-form">
-							<div class="form-coche-3">
-								<label>Nom <em>*</em></label>
-								<input id="name" placeholder="Votre nom" required>
-								<label>Adresse email <em>*</em></label>
-								<input id="email" placeholder="exemple@hotmail.fr"><br><br>
-								<label> Votre message <em>*</em></label><br>
-            					<textarea class="form-control" rows="3" placeholder="Votre message"></textarea><br>
-            					<button class="button is-primary"><p><b>Envoyer</b></p></button>
-          					</div>
-						</fieldset>
-					</form>	
-				</div>
 			</div>
-			<footer>
-				<div class="banner-bottom">
-					<div class="banner-bottom-title">
+			<footer class="container-fluid block">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 banner-bottom">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 banner-bottom-title">
 						<h2><b>Suivez nous sur les réseaux sociaux !</b></h2>
 					</div>
-					<div class="social-button">
-						<button class= url="www.facebook.com">
-						</button>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 social-button">
+						<a href="https://www.facebook.com/" class="fb-ic mr-3" role="button"><i class="fab fa-lg fa-facebook-f" ></i></a>
+						<a href="https://twitter.com/?lang=fr" class="tw-ic mr-3" role="button"><i class="fab fa-lg fa-twitter"></i></a>
+						<a href="https://www.instagram.com/?hl=fr"class="ins-ic mr-3" role="button"><i class="fab fa-lg fa-instagram"></i></a>
 					</div>
 
-					<div class="adress">
-						<p>Association Festival des Films de Plein Air<br> 54, avenue de la cinématographie <br>75099 Paris
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 adress">
+						<p>Association Festival des Films de Plein Air<br> 54, avenue de la cinématographie <br>75099 Paris</p>
 					</div>
 
 				</div>

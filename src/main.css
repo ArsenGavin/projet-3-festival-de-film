@@ -1,25 +1,45 @@
 /*
 BODY
 */
+body, html {
+	padding: 0px;
+	margin: 0px;
+}
 .block {
-	flex-direction: column;
-	height: 100%;
+	margin:0;
+	padding:0;
 }
 
+h2 {
+	font-size: 20px;
+}
 
 /*
 HEADER
 */
 .header {
-	width: 100%;
+	padding: 0;
 	height: 100px;
 	line-height: 100px;
-	display: flex;
-	justify-content: space-around;
 	position: fixed;
 	z-index: 8;
 	top: 0;
+	left:0;
+	right: 0;
 	background-color: #0c2461;
+	float: left;
+	overflow: hidden;
+}
+
+.header-menu {
+	float: right;
+	text-align: right;
+	margin-right: 2%;
+}
+
+.header-title {
+	letter-spacing: 1px;
+	margin-left: 10%;
 }
 
 .header .header-title {
@@ -50,16 +70,21 @@ BANNER
 */
 #banner {
 	background-color: #0c2461;
+	padding-bottom: 0px;
 }
 
 #banner .banner-image {
     top: 0;
     left: 0;
     margin-top: 76px;
-   	min-width: 100%;
+   	max-width: 100%;
+   	max-height: 100%;
+   	position: relative;
+   	padding: 0px;
+   	margin: 0px;
 }
 
-#banner .banner-title {
+.banner-title {
 	top: 25%;
 	text-align: left;
 	position: absolute;
@@ -71,17 +96,29 @@ BANNER
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
-#banner .banner-title-2 {
+.banner-title-2 {
 	text-align: center;
-	position: absolute;
 	color : white;
 	font-family: 'Arbutus Slab', serif;
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-	top: 150%;
 	background-color: black;
-	opacity: 0.5;
-	min-width: 100%;
-	max-height: 100%;
+	opacity: 0.8;
+	width: 100%;
+	padding-bottom: 1%;
+}
+
+.banner-title-p {
+    bottom: 20%;
+    transform: translateY(50%);
+	text-align: left;
+	position: absolute;
+	color : white;
+	max-height: 30%;
+	font-family: 'Arbutus Slab', serif;
+	max-width: 28%;
+	margin-left: 2%;
+	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+	font-size: 16px;
 }
 /*
 BANNER END
@@ -91,13 +128,25 @@ BANNER END
 PROGRAM
 */
 .program-title {
-	display: flex;
-	justify-content: space-around;
 	background-image:linear-gradient( #0c2461, #0c2461, #0c2461, white);
 	font-family: 'Arbutus Slab', serif;
 	color: white;
 	min-height: 50px;
 	padding-top: 7px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	display: flex;
+}
+
+ #program-anchor {
+
+ }
+
+.button-prog {
+	float: right;
+	padding-top: 0%;
+	transform: translateY(-12%);
 }
 
 .button :hover {
@@ -105,20 +154,21 @@ PROGRAM
 }
 
 .program-list {
-	display: flex;
 	text-align: center;
-	margin-top: 2%;
+	padding: 0px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding-top: 5%;
+	display: flex;
+	justify-content: space-around;
 }
 
 .program-list-18h {
 	margin-bottom: 10%;
-	margin-right: 5%;
-	margin-left: 5%;
 }
 
 .program-list-20h {
-	margin-right: 5%;
-	margin-left: 5%;
+	margin-bottom: 5%;
 }
 
 .program-list h4 {
@@ -130,15 +180,19 @@ PROGRAM
 .program_list-18h p {
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 	color: white;
-	margin-right: 2%;
-	margin-left: 2%;
 }
 
 .program_list-20h p {
 	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 	color: white;
-	margin-right: 2%;
-	margin-left: 2%;
+}
+
+.program-list-20h-friday {
+	padding-top: 7%;
+}
+
+.program-list-20h-monday {
+	padding-top: 7%;
 }
 
 /*
@@ -150,7 +204,7 @@ ORDER FORM
 */
 .order {
 	background-color: white;
-	display: flex;
+	overflow: hidden;
 }
 
 .order-title {
@@ -164,12 +218,14 @@ ORDER FORM
 }
 
 .order-text {
-	padding-top: 5%;
+	padding-top: 10%;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-bottom: 5%;
 	font-family: 'Arbutus Slab', serif;
 	color: black;
+	float: left;
+	font-size: 20px;
 }
 
 .order-star {
@@ -183,12 +239,16 @@ ORDER FORM
 	padding-top: 2%;
 	padding-left: 5%;
 	padding-right: 5%;
+	padding-bottom: 2%;
 	min-width: 50%;
-    display: flex;
-    flex-direction: column;
-	justify-content: space-around;
 	background-color: white;
+	float: right;
 }
+
+.form p {
+	font-size: 16px;
+}
+
 
 .form-coche-1 {
 	text-align: center;
@@ -213,6 +273,11 @@ ORDER FORM
 .date {
 	font-size: 16pt;
 	color: black;
+	text-align: center;
+}
+
+fieldset {
+	font-size: 14px;
 }
 
 /*
@@ -234,22 +299,29 @@ ACTU
 .actu {
 	font-family: 'Arbutus Slab', serif;
 	color: black;
-	display: flex;
-	justify-content: space-around;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
 }
 
 .actu-text {
 	font-size: 15pt;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 5%;
 }
+
+.actu-img {
+	padding-bottom: 10%;
+}
+
 .button-actu {
 	text-align: center;
+	padding-bottom: 2%;
 }
+
 /*
 ACTU END
 */
@@ -269,21 +341,28 @@ CONTACT
 
 .contact-text {
 	padding-bottom: 10px;
+	text-align: left;
+}
+
+.contact-gps {
+	text-align: center;
 }
 
 .contact-text-gps {
 	padding-top: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
-	padding-bottom: 5%;
+	padding-bottom: 0;
 	font-family: 'Arbutus Slab', serif;
 	color: black;
 }
 
-.contact-text-form {
+.contact {
 	background-color: white;
 	display: flex;
 }
+
+
 
 .contact-star {
 	font-family: 'georgia';
@@ -291,9 +370,31 @@ CONTACT
 }
 
 .form-control {
-	width: 600px;
+	width: 300px;
 	height: 100px;
 }
+
+.form {
+	padding-top: 5%;	
+}
+
+.contact-form {
+	flex-direction: column;
+}
+
+#name {
+	margin-left: 75px;
+}
+
+#email {
+	margin-left: 11px;
+}
+
+.send {
+	text-align: center;
+	margin-right: 20%;
+}
+
 /*
 CONTACT END
 */
@@ -302,23 +403,43 @@ CONTACT END
 FOOTER
 */
 
+
 .banner-bottom {
 	width: 100%;
-	height: 150px;
+	height: 100px;
 	background-color: #0c2461;
+	display: flex;
+	justify-content: space-around;
 }
 
 .banner-bottom-title {
 	color : white;
 	text-align: center;
-	font-size: 13pt;
+	font-size: 11pt;
+	margin-top: 1%;
 }
 
 .adress {
 	font-size: 10pt;
 	color : white;
 	text-align: center;
+	margin-top: 1%;
 }
+
+.social-button {
+	background-color: white;
+	height: 50px;
+	margin-top: 1%;
+	padding: 1%; 
+	text-align: center;
+	opacity: 0.5;
+	border-radius: 25px;
+}
+
+.social-button :hover {
+	color: #e67e22;
+}
+
 /*
 FOOTER END
 */
