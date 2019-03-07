@@ -5,6 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Les Films de Plein Air</title>
+		<link rel="icon" type="image/png" href="src/img/logo.jpg" />
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,9 +24,9 @@
 		<!-- HEADER -->
 		<div class="block">
 			<header class="container-fluid header">
-				<a  href="#" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 header-title">
+				<a  href="#banner" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 header-title">
 				Films de  Plein  Air</a>
-				<nav class="col-xs-0 col-sm-0 col-md-6 col-lg-6 header-menu">
+				<nav class="col-xs-6 col-sm-6 col-md-6 col-lg-6 header-menu">
 					<a href="#banner">Accueil</a>
 					<a href="#program-anchor">Programme</a>
 					<a href="#order-anchor">Réservation</a>
@@ -34,101 +35,102 @@
 				</nav>
 				</div>
 				
-				btn btn-danger dropdown-toggle
 			</header>
 		</div>
 		<!-- HEADER END -->
+
 		<!-- BANNER -->
 		<div class="block">
 			<div id="banner">
 				<img src="src/img/banner.jpg" alt="Photo illustration caméra sur une route" class="banner-image">
-				<h1 class="col-xs-0 col-sm-0 col-md-6 col-lg-6 banner-title">REDÉCOUVREZ LE CINÉMA <br>DE PLEIN AIR !</h1><br><p class="col-xs-0 col-sm-0 col-md-6 col-lg-6 banner-title-p">Projections gratuites de films d'auteurs au Parc Monceau du 5 au 8 août. </p>
+				<h1 class="col-xs-0 col-sm-0 col-md-6 col-lg-6 banner-title">REDÉCOUVREZ LE CINÉMA <br>DE PLEIN AIR !</h1>
 				<p class="col-xs-0 col-sm-0 col-md-12 col-lg-12 banner-title-2">Quand ?<br>
 Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer chaque soir à minuit.<br>2 projections par soir, avec une pause entre chaque film afin de vous permettre d'échanger sur les films d'auteur qui vous seront présentés.<br>Comment ?<br>Ce festival de projection de films d'auteurs est totalement GRATUIT ! Venez équipé ou les mains vides pour profiter d'une séance de cinéma qui associera 7ème Art et Nature !<br>Food trucks et stands de gourmandises seront présents pour les petits plaisirs.<br>En cas de mauvais temps, des protections seront prévues afin de garantir le visionnage des films dans de bonnes conditions.</p>		
 			</div>
 		</div>
 		<!-- BANNER END -->
+		
 		<!-- SECTION PROGRAMME -->
 		<section class="block">
 			<div class="container-fluid program-title">
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<h2 id="program-anchor"><b>Programme</b></h2>
+					<h2 id="program-anchor">Programme</h2>
 				</div>
 				<a  href="src/img/programmation.png" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 button-prog">
-					<button class="btn btn-outline-warning"><b>Télécharger le programme</b></button>
+					<button class="btn btn-outline-warning"><i class="fa fa-download"></i>Télécharger le programme</button>
 				</a>
 			</div>
-			<div class="container-fluid program-list">
+			<div class="container-fluid row program-list">
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 program-list-friday">
-					<p class="date"><b>Vendredi 5 août</b></p>
+					<p class="date">Vendredi 5 août</p>
 					<div class="program-list-18h">
-						<p><b>18h30 Le concert </b></p><br><br>
+						<p class="bold">18h30 Le concert </p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=110666.html" title="Ceci est un lien image HTML">
-							<img src="src/img/concert.jpg"><br><br>
+							<img  class="img" src="src/img/concert.jpg">
 						</a>
 						<p>A l'époque de Brejnev, Andrei Filipov était le plus grand chef d'orchestre...
 						</p>
 					</div>
-					<div class="program-list-20h-friday">
-						<p><b>20h De rouille et d'os </b></p><br><br>
+					<div class="program-list-20h">
+						<p class="bold">20h De rouille et d'os</p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=172976.html" title="Ceci est un lien image HTML">
-							<img src="src/img/de-rouille-et-dos.jpg"><br><br>
+							<img class="img" src="src/img/de-rouille-et-dos.jpg">
 						</a>
-						<p>Un soir, en boite de nuit, Stéphanie, dresseuse d'orques au Marineland d'antibes...
+						<p>Un soir, en boite de nuit, Stéphanie, dresseuse d'orques au Marineland...
 						</p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 program-list-saturday">
-					<p class="date"><b>Samedi 6 août</b><br></p>
+					<p class="date">Samedi 6 août</p>
 					<div class="container program-list-18h">
-						<p><b>18h30 Entre les murs </b></p><br><br>
+						<p class="bold">18h30 Entre les murs</p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=58151.html" title="Ceci est un lien image HTML">
-							<img src="src/img/entre-les-murs.jpg"><br><br>
+							<img class="img" src="src/img/entre-les-murs.jpg">
 						</a>
-						<p>François est un jeune professeur de francais d'une classe de 4e dans un collège ordinaire...</p>
+						<p>François est un jeune professeur de francais d'une classe de 4e...</p>
 					</div>
 					<div class="container program-list-20h">
-						<p><b>20h Je vais bien ne t'en fais pas </b></p><br><br>
+						<p class="bold">20h Je vais bien ne t'en fais pas</p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=108818.html" title="Ceci est un lien image HTML">
-							<img src="src/img/je-vais-bien-ne-ten-fais-pas.jpg"><br><br>
+							<img class="img" src="src/img/je-vais-bien-ne-ten-fais-pas.jpg">
 						</a>
 						<p>Comme elle rentre de vacances, Lili, 19ans, apprend par ses parents que Loïc...
 						</p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 program-list-sunday">
-					<p class="date"><b>Dimanche 7 août</b></p>
+					<p class="date">Dimanche 7 août</p>
 					<div class="container program-list-18h">
-						<p><b>18h30 La haine </b></p><br><br>
+						<p class="bold">18h30 La haine</p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=12551.html" title="Ceci est un lien image HTML">
-							<img src="src/img/la-haine.jpg"><br><br>
+							<img  class="img" src="src/img/la-haine.jpg">
 						</a>
-						<p>Après une bavure policière, une nuit d'émeutes éclate entre les jeunes de la cité des muguets...
+						<p>Après une bavure policière, une nuit d'émeutes éclate entre...
 						</p>
 					</div>
 					<div class="container program-list-20h">
-						<p><b>20h Persepolis </b><br><br></p>
+						<p class="bold">20h Persepolis</p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=110204.html">
-							<img src="src/img/persepolis.jpg"><br><br>
+							<img class="img" src="src/img/persepolis.jpg">
 						</a>
-						<p>Téhéran 1978 : MArjane, huit ans songe à l'avenir et se rêve en prophète sauvant le monde...
+						<p>Téhéran 1978 : MArjane, huit ans songe à l'avenir et se rêve en prophète...
 						</p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 program-list-monday">
-					<p class="date"><b>Lundi 8 août</b></p>
+					<p class="date">Lundi 8 août</p>
 					<div class="container program-list-18h">
-						<p><b>18h30 Polisse</b></p><br><br>
+						<p class="bold">18h30 Polisse</p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=181893.html">
-							<img src="src/img/polisse.jpg"><br><br>
+							<img  class="img" src="src/img/polisse.jpg">
 						</a>
 						<p>A Paris, Melissa, une photographe, vient effectuer un reportage...
 						</p>
 					</div>
-					<div class="container program-list-20h-monday">
-						<p><b>20h Un prophète </b></p><br><br>
+					<div class="container program-list-20h">
+						<p class="bold">20h Un prophète</p>
 						<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=110268.html">
-							<img src="src/img/prophete.jpg"><br><br>
+							<img class="img" src="src/img/prophete.jpg">
 						</a>
 						<p>Condamné à 6 ans de prison, Malike El Djebena ne sait ni lire ni écrire...
 						</p>
@@ -137,6 +139,7 @@ Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer
 			</div>
 		</section>
 		<!-- SECTION PROGRAMME END -->
+
 		<!-- SECTION RESERVATION -->
 		<section class="block">
 			<div class="container-fluid order-title">
@@ -152,14 +155,14 @@ Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer
 						<fieldset class="order-form">
 							<div class="form-coche-3">
 								<label>Nom <em>*</em></label>
-								<input id="name" placeholder="Votre nom" required>
+								<input id="name" placeholder="Votre nom" required><br>
 								<label>Adresse email <em>*</em></label>
 								<input id="email" placeholder="exemple@hotmail.fr">
 							</div>
 						</fieldset>
 						<fieldset>
 							<div class="form-coche-1">
-								<p class="date">Vendredi 5 août</p>
+								<p class="date1">Vendredi 5 août</p>
 							</div>
 							<div class="form-coche">
 								<div class="form-marge">
@@ -168,7 +171,7 @@ Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer
 								<INPUT type="checkbox" name="choice2" value="2"> 20h De rouille et d'os</INPUT>
 							</div>
 							<div class="form-coche-1">
-								<p class="date">Samedi 6 août</p>
+								<p class="date1">Samedi 6 août</p>
 							</div>
 							<div class="form-coche">
 								<div class="form-marge">
@@ -177,7 +180,7 @@ Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer
 								<INPUT type="checkbox" name="choice4" value="4"> 20h Je vais bien ne t'en fais pas</INPUT>
 							</div>
 							<div class="form-coche-1">
-								<p class="date">Dimanche 7 août</p>
+								<p class="date1">Dimanche 7 août</p>
 							</div>
 							<div class="form-coche">
 								<div class="form-marge">
@@ -186,7 +189,7 @@ Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer
 								<INPUT type="checkbox" name="choice6" value="6"> 20h Persepolis</INPUT>
 							</div>
 							<div class="form-coche-1">
-								<p class="date">Lundi 8 août</p>
+								<p class="date1">Lundi 8 août</p>
 							</div>
 							<div class="form-coche">
 								<div class="form-marge">
@@ -240,12 +243,9 @@ Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer
 				</article>
 			</div>
 			<div class="button-actu">
-				<button class="btn btn-warning"><p><b>Toutes les actualités</b></p></button>
+				<button href="https://www.lemonde.fr/" class="btn btn-warning"><p><b>Toutes les actualités</b></p></button>
 			</div>
 		</section>	
-
-
-
 		<!-- SECTION ACTU END -->
 
 		<!-- SECTION CONTACT -->
@@ -253,16 +253,16 @@ Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer
 			<div class="contact-title">
 				<h2 id="contact-anchor"><b>Contact</b></h2>
 			</div>
-			<div class="container-fluid contact">
-					<div class="contact-text-gps">
+			<div class="container-fluid row contact">
+					<div class=" =col-sm-12 col-md-6 row contact-text-gps">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-text">
 							<p><b>Contacter l'association</b><br><br>Fondée en 2016 dans le but de relancer l'attrait pour les films d'auteur tout en profitant de l'environnement verdoyant du Parc Monceau, l'Association Festival des Films de Plein Air est une association loi 1901.<br>N'hésitez pas à rejoindre nos rangs afin de développer plus de projections en région parisienne !</p>
 						</div>			
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-gps">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row contact-gps">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8737382034974!2d2.3067663155558016!3d48.8796834792896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1551288445390" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 form">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 form1">
 							<form action="">
 								<p class="contact-star"><i>Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p><br>
 								<fieldset class="contact-form">
@@ -271,11 +271,11 @@ Du 5 au 8 août<br>Nous vous accueillons dès 18h sur place, et devons clôturer
 										<input id="name" placeholder="Votre nom" required>
 									</div>
 									<div>
-										<label>Adresse email <em>*</em></label>
+										<label class="form-marg">Adresse email <em>*</em></label>
 										<input id="email" placeholder="exemple@hotmail.fr">
 									</div>
-									<div>
-										<label> Votre message <em>*</em></label><br>
+									<div class ="form-msg">
+										<label class="form-marg"> Votre message <em>*</em></label><br>
             							<textarea class="form-control" rows="3" placeholder="Votre message"></textarea><br>
             							<div class="send">
             								<button class="btn btn-success"><p><b>Envoyer</b></p></button>
